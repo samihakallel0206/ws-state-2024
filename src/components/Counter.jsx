@@ -6,12 +6,14 @@ export default class Counter extends Component {
       count: 0,
     };
   }
+  //increment and decrement methods
   increment = () => {
     this.setState({ count: this.state.count + 1 });
   };
   decrement = () => {
     this.setState({ count: this.state.count > 0 ? this.state.count - 1 : 0 });
   };
+  //life cycle of Counter component
   componentDidMount() {
     console.log("I'm here 🙄")
   }
@@ -21,6 +23,7 @@ export default class Counter extends Component {
   componentWillUnmount() {
     console.log("I'm dead 💀")
   }
+  // **********************************************************************
   render() {
     return (
       <div>

@@ -9,6 +9,7 @@ export default class App extends Component {
       show: false,
     };
   }
+  //method that change show
   handleShow = () => { this.setState({ show: !this.state.show }) }
 
   render() {
